@@ -1,4 +1,4 @@
-#
+# ABALO
 a = int(input(f"Enter First Number: "))
 b = int(input(f"Enter Second Number: "))
 
@@ -26,14 +26,14 @@ def division(a, b):
         print(cc)
         return cc
 
-#
+
 print("Enter your Choice")
 print("1 for adding")
 print("2 for subtracting")
 print("3 for multiplying")
 print("4 for dividing")
 c = int(input("Enter ur choice"))
-
+# QUEJA
 if c == 0:
         print("error")
 elif c == 1:
@@ -46,4 +46,19 @@ elif c == 4:
     print (division(a, b))
 else:
     print("error")
+
+
+# New: getValues()
+
+def getValues():
+  
+  num1 = float(input("Enter the first number: "))
+  num2 = float(input("Enter the second number: "))
+
+  return num1, num2
+
+number1, number2 = getValues()
+
+print(f"First number: {number1}")
+print(f"Second number: {number2}")
 
